@@ -1,7 +1,9 @@
 public interface IConta {
-    public int getAgencia(double valor);
+    void sacar(double valor);
 
-    public int getNumero(double valor);
+    void depositar(double valor);
 
-    public double getSaldo(double valor, Conta contaDestino);
+    void transferir(double valor, Conta contaDestino);
+
+    void imprimirExtrato();
 }
